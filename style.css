@@ -3,11 +3,11 @@
   --page-2-color: tan;
   --page-3-color:teal;
   --page-4-color:slateblue;
-  --animation: 1s;
+  --animate-speed: 1s;
 }
 
 body{
-  font-family: arial,helvetica,sans-serif;
+  font-family: arial,Helvetica,sans-serif;
   line-height: 1.4;
   color: #fff;
   margin: 0;
@@ -69,15 +69,18 @@ body{
 
 #page-1 h1{
   transform: translateY(-1200px);
-  animation: heading var(--animate-speed) forwards ease-in;
+  animation: heading var(--animate-speed) forwards 
+  ease-in;
 }
-#page-1 p{
+#page-1 p {
   transform: translateX(-1800px);
-  animation: text var(--animate-speed) forwards ease-in 2s;
+  animation: text var(--animate-speed) forwards 
+  ease-in 1s;
 }
 
 /* Keyframes */
-@keyframes heading { to {
+@keyframes heading { 
+  to {
   transform: translateY(0);
 }
 }
